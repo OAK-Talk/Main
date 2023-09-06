@@ -16,7 +16,7 @@ public class Kakao extends Application {
 	@Override
 	public void start(Stage stage) throws IOException {
 
-		Parent root = FXMLLoader.load(getClass().getResource("SignUp.fxml"));
+		Parent root = FXMLLoader.load(getClass().getResource("FriendsList.fxml"));
 
 		Scene scene = new Scene(root);
 		stage.setScene(scene);
@@ -29,7 +29,7 @@ public class Kakao extends Application {
 
 	public Parent loadFXML(String fxml) throws IOException {
 		FXMLLoader fxmlLoader = new FXMLLoader(Kakao.class.getResource(fxml + ".fxml"));
-		return fxmlLoader.load();
+		return fxmlLoader.load(); 
 	}
 
 
