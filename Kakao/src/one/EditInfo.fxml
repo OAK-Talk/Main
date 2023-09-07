@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="400.0" style="-fx-background-color: #9AADFF;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="one.ProfileController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="100.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/정보%20수정.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="114.0" layoutX="49.0" layoutY="424.0" onMouseClicked="#cl_back" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/뒤로.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="103.0" layoutX="252.0" layoutY="424.0" onMouseClicked="#cl_save" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/저장.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="208.0" layoutX="52.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/내%20이름.PNG" />
+         </image>
+      </ImageView>
+      <TextField fx:id="myName" layoutX="127.0" layoutY="303.0" prefHeight="38.0" prefWidth="200.0" />
+      <ImageView fitHeight="45.0" fitWidth="200.0" layoutX="56.0" layoutY="359.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/상태메시지.PNG" />
+         </image>
+      </ImageView>
+      <TextField fx:id="myMessage" layoutX="152.0" layoutY="360.0" prefHeight="38.0" prefWidth="175.0" />
+      <ImageView fitHeight="38.0" fitWidth="139.0" layoutX="133.0" layoutY="256.0" onMouseClicked="#editProfile" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/수정.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="myProfile" fitHeight="177.0" fitWidth="208.0" layoutX="96.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</Pane>
