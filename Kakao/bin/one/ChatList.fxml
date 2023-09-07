@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="743.0" prefWidth="600.0" style="-fx-background-color:#9aadff" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="one.ChatListController">
+   <children>
+      <ListView fx:id="friendsList" layoutX="80.0" layoutY="102.0" prefHeight="540.0" prefWidth="441.0" />
+      <ImageView fitHeight="52.0" fitWidth="177.0" layoutX="219.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/채팅%20목록.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="201.0" layoutY="671.0" onMouseClicked="#cl_ChattingRoom" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../채팅방_입장.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="128.0" layoutX="440.0" layoutY="671.0" onMouseClicked="#cl_ChatFix" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/채팅방%20고정.PNG" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

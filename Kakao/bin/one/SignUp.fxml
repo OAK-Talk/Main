@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="461.0" prefWidth="450.0" style="-fx-background-color:#9aadff" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="one.LoginController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="125.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/프로그램%20이름.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="80.0" fitWidth="63.0" layoutX="314.0" layoutY="183.0" onMouseClicked="#cl_IDCheck" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/체크.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-288.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="40.0" fitWidth="105.0" layoutX="160.0" layoutY="400.0" onMouseClicked="#cl_Submit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/가입.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-413.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="40.0" fitWidth="72.0" layoutY="403.0" onMouseClicked="#cl_BackToLogin" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/뒤로.PNG" />
+         </image>
+      </ImageView>
+      <TextField fx:id="newId" layoutX="102.0" layoutY="186.0" prefHeight="34.0" prefWidth="200.0" promptText="아이디" />
+      <TextField fx:id="newNickName" layoutX="102.0" layoutY="241.0" prefHeight="34.0" prefWidth="200.0" promptText="닉네임" />
+      <ImageView fx:id="notInput" fitHeight="260.0" fitWidth="303.0" layoutX="74.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+      <PasswordField fx:id="newPw" layoutX="102.0" layoutY="296.0" prefHeight="34.0" prefWidth="200.0" promptText="비밀번호" />
+      <PasswordField fx:id="PW_Check" layoutX="102.0" layoutY="348.0" prefHeight="34.0" prefWidth="200.0" promptText="비밀번호 확인" />
+   </children>
+</Pane>

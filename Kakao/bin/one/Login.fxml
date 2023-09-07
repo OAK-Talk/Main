@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #9AADFF;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="OAK" fitHeight="150.0" fitWidth="200.0" layoutX="211.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/OAK.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="59.0" fitWidth="104.0" layoutX="177.0" layoutY="264.0" onMouseClicked="#cl_Login" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/로그인.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="52.0" fitWidth="98.0" layoutX="332.0" layoutY="270.0" onMouseClicked="#cl_Signup" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/회원가입.PNG" />
+         </image>
+      </ImageView>
+      <TextField fx:id="LoginId" layoutX="211.0" layoutY="166.0" prefHeight="34.0" prefWidth="200.0" promptText="아이디" />
+      <TextField fx:id="LoginPwd" layoutX="211.0" layoutY="211.0" prefHeight="34.0" prefWidth="200.0" promptText="패스워드" />
+   </children>
+</Pane>
